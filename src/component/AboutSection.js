@@ -14,11 +14,10 @@ const AboutSection = () => {
           networks, and machine learning.
         </p>
         <p>
-          I'm always willing to pick up new skills. I am also competent of
+          I&apos;m always willing to pick up new skills. I am also competent of
           teamwork, analytical thinking, leadership qualities, attention to
           detail, and other skills. I offer every project my absolute best
           effort.
-          {/* I've passed four IIT-level NPTEL certification exams. */}
         </p>
       </div>
     </div>
