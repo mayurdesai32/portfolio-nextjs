@@ -18,13 +18,29 @@ const ContactSection = () => {
       return alert('Email is not valid');
     }
     setSendReq(true);
-    const data = await axios.post('/api/hello', {
-      name,
-      email,
-      message,
-    });
+    let data;
+    try {
+      data = await axios.post('/api/hello', {
+        name,
+        email,
+        message,
+      });
+      if (data) {
+        alert('Detail receive successfully');
+        setSendReq(false);
+        setName('');
+        setMessage('');
+        setEmail('');
+        setName('');
+      }
+    } catch (error) {
+      console.log(error);
+      setSendReq(false);
+    }
+
     console.log('data send');
-    console.log(data);
+    console.log(data.message);
+    // message: 'message send succesfully';
     console.log('data send');
   };
   return (
