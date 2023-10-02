@@ -17,7 +17,7 @@ const FooterSection = () => {
           <i className='fa-sharp fa-regular fa-envelope circular-icon'></i>
         </a>
 
-        <a href='https://wa.me/7745811201' target='blank'>
+        <a href='https://wa.me/9372191971' target='blank'>
           <i className='fa-brands fa-whatsapp'></i>
         </a>
 

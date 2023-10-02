@@ -62,7 +62,7 @@ const ProjectSection = () => {
         'MongoDB',
       ],
       category: ['All', 'Web'],
-      project_img: '/CATD.png',
+      project_img: '/portfolio12.png',
       Github_Link: 'https://github.com/mayurdesai32/Url-shortner-',
       Live_Link: 'https://mdtv.netlify.app/',
       project_desc:
