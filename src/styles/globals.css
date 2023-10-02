@@ -167,6 +167,7 @@ button {
 .hero_flex {
   display: flex;
   justify-content: space-between;
+
 }
 
 
@@ -174,6 +175,8 @@ button {
   max-width: 481px;
   max-height: 484px;
   position: relative;
+  min-width: 350px;
+
 }
 
 .heroImg img {
@@ -209,6 +212,8 @@ Image {
 .hero_content {
   padding-top: 3rem;
   max-width: 39.625rem;
+  /* border: 1px solid red; */
+
 }
 
 .title {
@@ -279,7 +284,7 @@ Image {
 .hero_footer {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 35px;
 }
 
 .hero_footer i {
@@ -412,6 +417,7 @@ Image {
 
 
 .SkillList {
+
   /* flex-basis: 43%; */
   min-width: 350px;
   height: 200px;
@@ -861,7 +867,10 @@ textarea {
   transform: scale(1.1);
 }
 
-
+.selected {
+  border-color: var(--primary_color);
+  /* border-width: 4px; */
+}
 
 
 
@@ -1014,8 +1023,13 @@ textarea {
 
 
 @media only screen and (max-width:890px) {
+  #HeroSection {
+    min-height: auto;
+  }
 
-  /* navbar  */
+  .hero_footer {
+    margin-top: 45px;
+  }
 
 
 
@@ -1052,6 +1066,12 @@ textarea {
 
 
 
+
+  .SkillSection>.SkillList+.SkillList {
+    margin-left: 0rem;
+  }
+
+
 }
 
 
@@ -1059,10 +1079,24 @@ textarea {
 
 
 @media only screen and (max-width:600px) {
+  #skills>.container {
+    padding: 0 1rem;
+    /* border: 1px solid red; */
+  }
+
+  #HeroSection>.container {
+    padding: 0 0;
+  }
+
+  /* .hero_footer {
+    margin-top: 15px;
+  } */
+
+
 
   .SkillList:hover {
-    /* transform: scale(1);
-    box-shadow: var(--boxShadow_primary); */
+    transform: scale(1);
+    box-shadow: var(--boxShadow_primary);
     /* box-shadow: rgba(244,
         239,
         239, 0.2) 0px 10px 36px 0px, rgba(244,
@@ -1169,8 +1203,11 @@ textarea {
 
   .heroImg {
     width: 300px;
+
     /* height: 200px; */
   }
+
+
 
   .SkillSection {
     flex-direction: column;
@@ -1179,9 +1216,7 @@ textarea {
     /* flex-wrap: wrap; */
   }
 
-  .SkillSection>.SkillList+.SkillList {
-    margin-left: 0;
-  }
+
 
   .project_item {
     font-size: 1.2rem;
@@ -1243,6 +1278,9 @@ textarea {
     font-size: 1.1rem;
     margin-bottom: 0.4rem;
   }
+
+
+
 
   input,
   textarea {

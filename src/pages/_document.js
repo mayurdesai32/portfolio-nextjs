@@ -5,11 +5,11 @@ export default function Document() {
     <Html lang='en'>
       {/* <Head /> */}
       <Head>
-        {/* <title>Mayur Desai</title>
+        <title>Mayur Desai</title>
         <meta
           name='description'
           content='this is mayur desai portfolio to showcase my project'
-        /> */}
+        />
         <link
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'

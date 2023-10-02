@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TitleSection from './TitleSection';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 const ContactSection = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -8,14 +9,36 @@ const ContactSection = () => {
   const [sendReq, setSendReq] = useState(false);
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
+  if (message.length > 500) {
+    alert('message should be less then 500 character');
+  }
+
   const submitHandler = async (e) => {
     e.preventDefault();
     if (!name || !email || !message) {
-      return alert('Please fill all input ');
+      return toast.error('Please fill all input ', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'light',
+      });
     }
     const isValidEmail = emailRegex.test(email);
     if (!isValidEmail) {
-      return alert('Email is not valid');
+      return toast.error('Email is not valid', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'light',
+      });
     }
     setSendReq(true);
     let data;
@@ -26,7 +49,18 @@ const ContactSection = () => {
         message,
       });
       if (data) {
-        alert('Detail receive successfully');
+        toast.success('Detail receive successfully', {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'light',
+        });
+
+        // alert('Detail receive successfully');
         setSendReq(false);
         setName('');
         setMessage('');
@@ -35,6 +69,18 @@ const ContactSection = () => {
       }
     } catch (error) {
       console.log(error);
+
+      toast.error('Form Not Submitted some issue happen please try later', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'light',
+      });
+
       setSendReq(false);
     }
 
@@ -84,7 +130,7 @@ const ContactSection = () => {
                   placeholder='Message...'
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                ></textarea>
+                />
               </div>
               {sendReq ? (
                 <button className='contact_btn_disabled'> Please wait</button>

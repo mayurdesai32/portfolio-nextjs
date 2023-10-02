@@ -10,7 +10,8 @@ import SkillSection from '@/component/SkillSection';
 import FooterSection from '@/component/FooterSection';
 import ProjectSection from '@/component/ProjectSection';
 import ContactSection from '@/component/ContactSection';
-
+import { ToastContainer } from '@/component/ToastContainer';
+import 'react-toastify/dist/ReactToastify.css';
 const lexend = Lexend({ subsets: ['latin'], display: 'swap' });
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <ProjectSection />
       <ContactSection />
       <FooterSection />
+      <ToastContainer />
     </div>
   );
 }

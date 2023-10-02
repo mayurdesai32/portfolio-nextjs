@@ -17,7 +17,10 @@ const sendEmail = async (options) => {
     // from: 'mayur.desai@somaiya.edu',
     to: process.env.RECEIVING_EMAIL,
     subject: options.subject,
-    text: ` senderEmail:${options.senderEmail} message: ${options.message} `,
+    text: `
+    sender Name:  ${options.name} \n \n
+    sender Email:  ${options.senderEmail} \n \n
+    Message: ${options.message} `,
   };
 
   await transport.sendMail(message);
