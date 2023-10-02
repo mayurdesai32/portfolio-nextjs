@@ -16,15 +16,31 @@ const lexend = Lexend({ subsets: ['latin'], display: 'swap' });
 
 export default function Home() {
   return (
-    <div className={lexend.className}>
-      <NavbarSection />
-      <HeroSection />
-      <AboutSection />
-      <SkillSection />
-      <ProjectSection />
-      <ContactSection />
-      <FooterSection />
-      <ToastContainer />
-    </div>
+    <>
+      <Head>
+        <title>Mayur Desai - Full Stack Developer</title>
+        <meta
+          name='description'
+          content="Mayur Desai's portfolio website showcasing skills, personal projects, and contact details. As a Full Stack Developer, I specialize in web and backend development using Node.js, React, and React Native."
+        />
+        <meta
+          name='keywords'
+          content='Mayur Desai, Full Stack Developer, Web Developer, Backend Developer, Node.js, React, React Native, Portfolio'
+        />
+        <meta name='author' content='Mayur Desai' />
+
+        <link rel='canonical' href='https://mayurdesai.vercel.app' />
+      </Head>
+      <div className={lexend.className}>
+        <NavbarSection />
+        <HeroSection />
+        <AboutSection />
+        <SkillSection />
+        <ProjectSection />
+        <ContactSection />
+        <FooterSection />
+        <ToastContainer />
+      </div>
+    </>
   );
 }
