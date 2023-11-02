@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 
 // import hero from '@/../public/hero.png';
-import hero from '../../public/hero.png'; 
+import hero from '../../public/hero.png';
 import Group from '../../public/Group 1.svg';
 const HeroSection = () => {
   return (
@@ -22,7 +22,9 @@ const HeroSection = () => {
             </div>
             <div className='hero_btn'>
               <a href='#contact'>Contact Me</a>
-              <a>Download CV</a>
+              <a href=' https://drive.google.com/file/d/1ZlglBf-cWYZ3Tbv8ZlHTUTw9kTVNuS16/view?usp=sharing'>
+                Download CV
+              </a>
             </div>
           </div>
           <div className='heroImg'>
