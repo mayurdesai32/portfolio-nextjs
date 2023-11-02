@@ -148,10 +148,10 @@ const ContactSection = () => {
               <div className='contact_col'>
                 <div className='label'>Quick Links</div>
                 <div className='link'>
-                  <a href=''>Home</a>
-                  <a href=''>About</a>
-                  <a href=''>Skills</a>
-                  <a href=''>Project</a>
+                  <a href='#HeroSection'>Home</a>
+                  <a href='#about'>About</a>
+                  <a href='#skills'>Skills</a>
+                  <a href='#project'>Project</a>
                 </div>
               </div>
 

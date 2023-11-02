@@ -494,9 +494,6 @@ Image {
 
 }
 
-.projectList>.SingleProject+.SingleProject {
-  /* margin-left: 1.5rem; */
-}
 
 
 
@@ -680,7 +677,6 @@ Image {
 
 label {
   display: inline-block;
-
   font-size: 1.2rem;
   color: var(--primary_color);
   margin-bottom: 0.7rem;
@@ -729,10 +725,6 @@ textarea {
 .contact_col {
   flex-basis: 50%;
   margin-bottom: 3rem;
-  /* border: 1px solid red; */
-  /* display: flex;
-  justify-content: space-between;
-  align-content: center; */
 }
 
 
@@ -876,8 +868,14 @@ textarea {
 
 .project_img {
   max-height: 300px;
+  /* border: 1px solid red; */
   margin-bottom: 1rem;
   transition: transform 1s;
+}
+
+.project_img Image {
+  object-fit: contain;
+  height: 300px;
 }
 
 .project_img:hover {
@@ -1096,14 +1094,36 @@ textarea {
 
 
 @media only screen and (max-width:600px) {
+
+  /* hero section */
+  #HeroSection>.container {
+    padding: 0px;
+  }
+
+  .heroImg {
+    width: 300px;
+
+    /* height: 200px; */
+  }
+
   #skills>.container {
     padding: 0 1rem;
     /* border: 1px solid red; */
   }
 
-  #HeroSection>.container {
-    padding: 0px;
+  .profile {
+    font-size: 1.8rem;
   }
+
+
+  .desc {
+    font-size: 1.2rem;
+    margin-top: 1.25rem;
+  }
+
+
+
+
 
   /* .hero_footer {
     margin-top: 15px;
@@ -1199,10 +1219,6 @@ textarea {
 
 
 
-  .ContactSection_title {
-    /* text-align: center; */
-    font-size: 1.4rem;
-  }
 
   #NavbarSection {
     height: 70px;
@@ -1220,11 +1236,6 @@ textarea {
 
 
 
-  .heroImg {
-    width: 300px;
-
-    /* height: 200px; */
-  }
 
 
 
@@ -1271,13 +1282,23 @@ textarea {
 
   .about p {
     margin: auto;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     max-width: 53.25rem;
     color: var(--secondary_color);
     font-size: 1.1rem;
     font-weight: 400;
   }
 
+
+  .about>p+p {
+    margin-top: 1.5rem;
+  }
+
+
+  .ContactSection_title {
+    /* text-align: center; */
+    font-size: 1.4rem;
+  }
 
 
   .ContactSection {
@@ -1287,6 +1308,12 @@ textarea {
   .input_flex {
     flex-basis: 100%;
     margin-bottom: 0rem;
+    margin-top: 1rem;
+  }
+
+
+  .input_flex_Message {
+    margin-top: 1rem;
   }
 
   .contactform {
@@ -1382,14 +1409,7 @@ textarea {
 
 
 
-  .profile {
-    font-size: 2.5rem;
-  }
 
-
-  .desc {
-    font-size: 1.5rem;
-  }
 
   .contact_col .label {
     /* font-size: 1rem; */

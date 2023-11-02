@@ -59,27 +59,27 @@ const NavbarSection = () => {
           <div className={`${openMenu ? 'navDrawerOpen' : ''} navDrawer`}>
             <ul className='drawerNavlist'>
               <li>
-                <a href='#HeroSection' onClick={() => setOpenMenu(false)}>
+                <a href='#HeroSection' onClick={() => setMenu()}>
                   Home
                 </a>
               </li>
               <li>
-                <a href='#about' onClick={() => setOpenMenu(false)}>
+                <a href='#about' onClick={() => setMenu()}>
                   About
                 </a>
               </li>
               <li>
-                <a href='#skills' onClick={() => setOpenMenu(false)}>
+                <a href='#skills' onClick={() => setMenu()}>
                   Skills
                 </a>
               </li>
               <li>
-                <a href='#project' onClick={() => setOpenMenu(false)}>
+                <a href='#project' onClick={() => setMenu()}>
                   Projects
                 </a>
               </li>
               <li>
-                <a href='#contact' onClick={() => setOpenMenu(false)}>
+                <a href='#contact' onClick={() => setMenu()}>
                   Contact
                 </a>
               </li>
