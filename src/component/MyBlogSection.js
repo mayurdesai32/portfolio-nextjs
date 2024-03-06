@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import TitleSection from "./TitleSection";
-import SingleProject from "./SingleProject";
+// import SingleProject from "./SingleProject";
+import SingleBlog from "./SingleBlog";
 
-const ProjectSection = () => {
+const MyBlogSection = () => {
   const [category, setCategory] = useState("All");
   const handler = (val) => {
     setCategory(val);
@@ -84,12 +85,12 @@ const ProjectSection = () => {
     <div id="project" className="container">
       <div className="ProjectSection">
         <TitleSection
-          title={"My Project"}
+          title={"My Blogs"}
           subTitle={
-            "Here, you can find some of the sample projects that I created recently."
+            "Here, you can find some of the Blog that I created recently."
           }
         />
-        <div className="project_category">
+        {/* <div className="project_category">
           {project_item.map((e, i) => (
             <button
               key={i}
@@ -101,18 +102,19 @@ const ProjectSection = () => {
               {e}
             </button>
           ))}
-        </div>
+        </div> */}
         <div className="projectList">
-          {project_list.map((e, i) =>
-            e.category.includes(category) || category === "All" ? (
-              <SingleProject key={i} data={e} />
-            ) : (
-              <></>
-            )
-          )}
-
-          {/* <SingleProject /> */}
+          {/* {project_list.map((e, i) => (
+            // e.category.includes(category) || category === "All" ? (
+            //   <SingleProject key={i} data={e} />
+            // ) : (
+            //   <></>
+            // )
+            <SingleBlog />
+          ))} */}
+          <SingleBlog />
         </div>
+
         {/* <div className='load_more'>Load More</div> */}
         {/* <div className='pagination'>
           <div className='pagination_item'>First</div>
@@ -128,4 +130,4 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+export default MyBlogSection;

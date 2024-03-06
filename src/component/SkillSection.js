@@ -1,61 +1,85 @@
-import React from 'react';
-import TitleSection from './TitleSection';
-import SkillList from './SkillList';
+import React from "react";
+import TitleSection from "./TitleSection";
+import SkillList from "./SkillList";
 
 const SkillSection = () => {
   return (
-    <div id='skills'>
-      <div className='container'>
+    <div id="skills">
+      <div className="container">
         <TitleSection
-          title={'My Skills'}
+          title={"My Skills"}
           subTitle={
-            'Here are some of my skills on which I have been working on for the past 2 years.'
+            "Here are some of my skills on which I have been working on for the past 2 years."
           }
         />
-        <div className='SkillSection'>
+        <div className="SkillSection">
           <SkillList
             list={[
-              'HTML',
-              'CSS',
-              'JAVASCRIPT',
-              'TYPESCRIPT',
-              'REACT',
-              'NEXTJS',
-              'REACTNATIVE',
-              'REDUX',
-              // 'FRAMER-MOTION',
+              "HTML",
+              "CSS",
+              "JAVASCRIPT",
+              "TYPESCRIPT",
+              "REACT",
+              "NEXTJS",
+              "REACTNATIVE",
+              "REDUX",
+              "FLUTTER", // 'FRAMER-MOTION',
             ]}
-            title={'FrontEnd'}
-            key={'FrontEnd'}
+            title={"FrontEnd"}
+            key={"FrontEnd"}
           />
 
           <SkillList
             list={[
-              'PYTHON',
+              "PYTHON",
               // 'TENSORFLOW',
-              'NODE-JS',
-              'EXPRESS-JS',
-
-              'FASTAPI',
-              'MYSQL',
-              'MONGODB',
+              "NODE-JS",
+              "EXPRESS-JS",
+              "FASTAPI",
+              "MYSQL",
+              "MONGODB",
+              "DOCKER",
+              "GIT",
+              "POSTMAN",
+              "J-METER",
+              "AWS",
+              "LINUX",
             ]}
-            title={'BackEnd'}
-            key={'BackEnd'}
+            title={"BackEnd"}
+            key={"BackEnd"}
           />
-          <SkillList
+          {/* <SkillList
             list={[
-              'DOCKER',
-              'GIT',
-              'POSTMAN',
-              'J-METER',
-              'AWS',
-              'LINUX',
-              'VS-CODE-DEBUGGING',
+              "DOCKER",
+              "GIT",
+              "POSTMAN",
+              "J-METER",
+              "AWS",
+              "LINUX",
+              "VS-CODE-DEBUGGING",
               // 'FIGMA',
             ]}
-            title={'Development Tools'}
-            key={'Development Tools'}
+            title={"Development Tools"}
+            key={"Development Tools"}
+          /> */}
+
+          <SkillList
+            list={[
+              // "MACHINE LEARNING",
+              // "DEEP LEARNING",
+              "SCIKIT LEARN",
+              "COMPUTER VISION",
+              "NLP",
+              "TENSORFLOW",
+              "LANGCHAIN",
+              "SPARK",
+              "HIVE",
+              "HADOOP",
+              "HBASE",
+              "KAFKA",
+              "POWER BI",
+            ]}
+            title={"ML/AI"}
           />
 
           {/* <SkillList
@@ -67,8 +91,6 @@ const SkillSection = () => {
             'TENSORFLOW',
             'PLOTLY',
             'YOLO',
-            // 'REDUX',
-            // 'FRAMER-MOTION',
           ]}
           title={'ML/AI'}
         /> */}

@@ -421,7 +421,7 @@ Image {
 
   /* flex-basis: 43%; */
   min-width: 350px;
-  height: 200px;
+  height: 230px;
   background-color: var(--offblack_color);
   color: var(--secondary_color);
   padding: 2.25rem 1.09375rem;
@@ -597,12 +597,14 @@ Image {
 }
 
 .project_item {
+  outline: none;
   border: 3px solid var(--secondary_color);
   background-color: var(--black_color);
   /* color: var(--secondary_color); */
   border: 3px solid #bebebe73;
   color: #bebebe73;
   padding: 0.7rem 2.5rem;
+  
   border-radius: 4rem;
   /* border-radius: 45%; */
   font-size: 1.5rem;
@@ -617,7 +619,7 @@ Image {
 
 
 .project_category>.project_item+.project_item {
-  margin-left: 1.5rem;
+  margin-left: 1.7rem;
 }
 
 .load_more {
@@ -870,6 +872,10 @@ textarea {
   max-height: 300px;
   /* border: 1px solid red; */
   margin-bottom: 1rem;
+  
+}
+
+.project_img_animate {
   transition: transform 1s;
 }
 
@@ -878,7 +884,7 @@ textarea {
   height: 300px;
 }
 
-.project_img:hover {
+.project_img_animate:hover {
   transform: scale(1.1);
 }
 
@@ -886,6 +892,36 @@ textarea {
   border-color: var(--primary_color);
   /* border-width: 4px; */
 }
+
+
+
+
+
+
+
+
+
+/* SingleBlog */
+.SingleBlog{
+  background-color: white;
+  height: 300px;
+  width: 700px;
+}
+
+.blog_image{
+  height: 300px;
+    width: 450px;
+  object-fit: contain;
+}
+.blog_image image{
+
+  object-fit: contain;
+}
+
+
+
+
+
 
 
 
@@ -1038,6 +1074,12 @@ textarea {
 
 
 @media only screen and (max-width:890px) {
+  .project_item{
+padding: 0.7rem 1.3rem;
+  } 
+  .project_category>.project_item+.project_item {
+      margin-left: 0.7rem;
+    }
   #HeroSection {
     min-height: auto;
   }
@@ -1250,11 +1292,11 @@ textarea {
 
   .project_item {
     font-size: 1.2rem;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 0.8rem;
   }
 
   .project_category>.project_item+.project_item {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
 
   .Title {
