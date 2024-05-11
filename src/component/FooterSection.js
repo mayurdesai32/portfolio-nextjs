@@ -19,7 +19,7 @@ const FooterSection = () => {
 
         <a href="https://medium.com/@msdesai32" target="blank">
           <i
-            class="fa-brands fa-medium"
+            className="fa-brands fa-medium"
             style={{ padding: "0.5rem 0.4rem" }}
           ></i>
         </a>

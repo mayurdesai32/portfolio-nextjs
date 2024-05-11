@@ -6,7 +6,7 @@ import Image from "next/image";
 // import CATD from '../../public';
 const SingleProject = ({ data }) => {
   let animate = "project_img_animate";
-  console.log(data.category);
+  // console.log(data.category);
   if (
     data.category.find((item) => {
       return item == "Mobile";

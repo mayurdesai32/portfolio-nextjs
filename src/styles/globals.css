@@ -623,7 +623,7 @@ Image {
 }
 
 .load_more {
-
+cursor: pointer;
   margin-top: 40px;
   /* display: inline-block; */
   text-align: center;
@@ -634,6 +634,11 @@ Image {
   /* border-radius: 3rem; */
   /* background-color: var(--primary_color); */
 }
+
+.load_more:hover{
+color: var(--secondary_color);
+}
+
 
 
 .bg_offwhite {
@@ -890,6 +895,7 @@ textarea {
 
 .selected {
   border-color: var(--primary_color);
+  color: var(--primary_color);
   /* border-width: 4px; */
 }
 

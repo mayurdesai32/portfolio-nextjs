@@ -77,6 +77,7 @@ const SkillSection = () => {
               "HADOOP",
               "HBASE",
               "KAFKA",
+              "AIRFLOW",
               "POWER BI",
             ]}
             title={"ML/AI"}

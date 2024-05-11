@@ -9,7 +9,7 @@ const ProjectSection = () => {
     setCategory(val);
   };
 
-  const project_item = ["All", "Web", "Mobile", "ML/AI", "PowerBi"];
+  const project_item = ["All", "Web", "Mobile", "ML/AI"];
 
   const project_list = [
     {
@@ -22,9 +22,58 @@ const ProjectSection = () => {
       project_desc:
         "I built my portfolio using Next.js to showcase skills, personal projects, and contact details. The website is deployed on Vercel and includes a Nodemailer feature for easy communication.",
     },
+
+    {
+      project_title: "CropiGo Mobile",
+      project_skill: [
+        "React Native",
+        "tflite",
+        "xgboost",
+        "image-picker",
+        "native module",
+      ],
+      category: ["All", "Mobile", "ML/AI"],
+      project_img: "/cropigoMobile.png",
+      Github_Link:
+        "https://github.com/mayurdesai32/college-project/tree/master/mobile",
+      Live_Link: "https://www.amazon.com/gp/product/B0CZNNRT53",
+      project_desc:
+        "CROPIGO is an AI-powered assistant tailored specifically for farmers, aiming to optimize crop selection and disease identification processes. By leveraging machine learning models and modern technologies, CROPIGO assists farmers in making data-driven decisions, ultimately improving agricultural yield and efficiency.",
+    },
+
+    {
+      project_title: "mdImageLabel",
+      project_skill: ["React Native", "@react-native-ml-kit", "image-picker"],
+      category: ["All", "Mobile", "ML/AI"],
+      project_img: "/mdlabel.png",
+      Github_Link: "https://github.com/mayurdesai32/ml_label__reactkotlin",
+      Live_Link: "https://www.amazon.com/gp/product/B0CZNNRT53",
+      project_desc:
+        "mdImageLabel is a mobile application developed using React Native, designed to predict labels for uploaded images using ML Kit Image Labeling. The app allows users to upload images from the device's gallery or capture them using the camera. Upon selecting an image, the app utilizes ML Kit Image Labeling to predict and display relevant labels for the image.",
+    },
+
+    {
+      project_title: "calculator",
+      project_skill: ["flutter"],
+      category: ["All", "Mobile"],
+      project_img: "/calculator.png",
+      Github_Link: "https://github.com/mayurdesai32/calculator",
+      Live_Link: "",
+      project_desc:
+        "calculator is a mobile application developed using flutter, Its just a simple calulator ",
+    },
+
     {
       project_title: "MDSHOP",
-      project_skill: ["React Native", "Stripe", "Node", "express", "MongoDB"],
+      project_skill: [
+        "React Native",
+        "Expo App",
+        "Redux-Toolkit",
+        "Stripe",
+        "Node",
+        "express",
+        "MongoDB",
+      ],
       category: ["All", "Mobile"],
       project_img: "/mdshop.png",
       Github_Link: "https://github.com/mayurdesai32/MDShop-reactNative",
@@ -32,25 +81,7 @@ const ProjectSection = () => {
       project_desc:
         "MDSHOP is a feature-rich e-commerce mobile app using React Native for the frontend and Node.js with Express and MongoDB for the backend. Users enjoy seamless product browsing, cart management, and secure checkout via COD or Stripe. It includes user-friendly functionalities such as profile creation, login with profile picture addition, and a robust OTP-based password reset. Admins efficiently manage products and orders",
     },
-    // {
-    //   project_title: 'MDSTORE',
-    //   project_skill: [
-    //     'Next',
-    //     'react',
-    //     'react',
-    //     'react',
-    //     'react',
-    //     'react',
-    //     'react',
-    //     'react',
-    //   ],
-    //   category: ['All', 'Web'],
-    //   project_img: '/CATD.png',
-    //   Github_Link: '#about',
-    //   Live_Link: '#about',
-    //   project_desc:
-    //     'Trackify is a web application web application web application designed to task management and enhance Trackify is a web application web application web application designed to task management and enhance Trackify is a web application web application web application designed to task management and enhance ',
-    // },
+
     {
       project_title: "MDTVSHOW",
       project_skill: ["React", "CSS", "tvmaza api", "ContextAPI"],
@@ -113,7 +144,7 @@ const ProjectSection = () => {
 
           {/* <SingleProject /> */}
         </div>
-        {/* <div className='load_more'>Load More</div> */}
+        {/* <div className="load_more">Load More</div> */}
         {/* <div className='pagination'>
           <div className='pagination_item'>First</div>
           <div className='pagination_item'>Prev</div>

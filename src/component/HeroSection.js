@@ -24,7 +24,7 @@ const HeroSection = () => {
               <a href="#contact">Contact Me</a>
               <a
                 href=" https://drive.google.com/file/d/1ZlglBf-cWYZ3Tbv8ZlHTUTw9kTVNuS16/view?usp=sharing"
-                download="Mayur_Desai_CV.pdf"
+                // download="Mayur_Desai_CV.pdf"
               >
                 Download CV
               </a>
@@ -35,27 +35,27 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="hero_footer">
-          <a href="https://medium.com/@msdesai32" target="blank">
-            <i
-              class="fa-brands fa-medium"
-              style={{ padding: "0.6rem 0.5rem" }}
-            ></i>
-          </a>
-
           <a href="https://linkedin.com/in/mayurdesai88" target="blank">
             <i className="fa-brands fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/mayurdesai32" target="blank">
             <i className="fa-brands fa-github"></i>
           </a>
+
+          <a href="https://medium.com/@msdesai32" target="blank">
+            <i
+              className="fa-brands fa-medium"
+              style={{ padding: "0.6rem 0.5rem" }}
+            ></i>
+          </a>
+
           <a href="https://wa.me/9372191971" target="blank">
             <i className="fa-brands fa-whatsapp"></i>
           </a>
-          {/* <i className='fa-brands fa-kaggle'></i> */}
-
           <a href="mailto:msdesai32@gmail.com" target="blank">
             <i className="fa-sharp fa-regular fa-envelope circular-icon"></i>
           </a>
+          {/* <i className="fa-brands fa-kaggle"></i> */}
         </div>
       </div>
     </div>
