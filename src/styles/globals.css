@@ -165,6 +165,7 @@ button {
 }
 
 .hero_flex {
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
 
@@ -173,10 +174,9 @@ button {
 
 .heroImg {
   max-width: 481px;
-  max-height: 484px;
+ max-height: 484px;
   position: relative;
   min-width: 350px;
-
 }
 
 .heroImg img {
@@ -184,6 +184,7 @@ button {
   z-index: 2;
   height: 100%;
   width: 100%;
+
 }
 
 
@@ -281,10 +282,13 @@ Image {
   margin-left: 1.5rem;
 }
 
+
+
 .hero_footer {
   display: flex;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 70px;
+  /* margin-top: 35px; */
 }
 
 .hero_footer i {
@@ -418,9 +422,8 @@ Image {
 
 
 .SkillList {
-
   /* flex-basis: 43%; */
-  min-width: 350px;
+  min-width: 360px;
   height: 230px;
   background-color: var(--offblack_color);
   color: var(--secondary_color);

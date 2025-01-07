@@ -9,7 +9,7 @@ const SkillSection = () => {
         <TitleSection
           title={"My Skills"}
           subTitle={
-            "Here are some of my skills on which I have been working on for the past 2 years."
+            "Here are some of my skills on which I have been working on for the past 3 years."
           }
         />
         <div className="SkillSection">
@@ -21,12 +21,33 @@ const SkillSection = () => {
               "TYPESCRIPT",
               "REACT",
               "NEXTJS",
-              "REACTNATIVE",
+              // "REACTNATIVE",
               "REDUX",
-              "FLUTTER", // 'FRAMER-MOTION',
+              // "FLUTTER",
+              "THREEJS",
+              // "SWIFTUI",
+              // "JETPACKCOMPOSE"
+              // 'FRAMER-MOTION',
             ]}
             title={"FrontEnd"}
             key={"FrontEnd"}
+          />
+          <SkillList
+            list={[
+              "SWIFT",
+              "KOTLIN",
+              "JAVA",
+              "REACTNATIVE",
+              "FLUTTER",
+              "SWIFTUI",
+              "REACT NATIVE SKIA",
+              "FLUTTER BLOC",
+              "FLUTTER RIVERPOD",
+              "JETPACKCOMPOSE",
+              // 'FIGMA',
+            ]}
+            title={"Mobile"}
+            key={"Mobile"}
           />
 
           <SkillList
@@ -35,14 +56,14 @@ const SkillSection = () => {
               // 'TENSORFLOW',
               "NODE-JS",
               "EXPRESS-JS",
-              "FASTAPI",
+              "DJANGO",
               "MYSQL",
               "MONGODB",
               "DOCKER",
               "GIT",
               "POSTMAN",
               "J-METER",
-              "AWS",
+              // "AWS",
               "LINUX",
             ]}
             title={"BackEnd"}
@@ -63,7 +84,7 @@ const SkillSection = () => {
             key={"Development Tools"}
           /> */}
 
-          <SkillList
+          {/* <SkillList
             list={[
               // "MACHINE LEARNING",
               // "DEEP LEARNING",
@@ -81,7 +102,7 @@ const SkillSection = () => {
               "POWER BI",
             ]}
             title={"ML/AI"}
-          />
+          /> */}
 
           {/* <SkillList
           list={[

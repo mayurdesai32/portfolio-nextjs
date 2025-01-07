@@ -55,7 +55,7 @@
     "project_img": "/cropigoMobile.png",
     "Github_Link":
       "https://github.com/mayurdesai32/college-project/tree/master/mobile",
-    "Live_Link": "https://www.amazon.com/gp/product/B0CZNNRT53",
+    "Live_Link": "https://github.com/mayurdesai32/college-project",
     "project_desc":
       "CROPIGO is an AI-powered assistant for farmers. CROPIGO assists farmers in selecting Crop based on soil and predicting which disease plant have based on leaf image. In this i have integrated tflite model using native module for plant disease prediction and for crop recommendation server (fastAPI ) is required where XGboost model is deployed"
   },
@@ -93,5 +93,27 @@
     "Live_Link": "https://url-shortner-2n7v.onrender.com/",
     "project_desc":
       "The URL Shortener project is a web application that allows users to shorten long URLs into shorter, more manageable links. It consists of both frontend and backend components. Users can input a long URL, and the system generates a unique, shorter alias for it. When someone clicks on the shortened URL, they are redirected to the original long URL."
+  }, {
+    "project_title": "MD CAMERA",
+    "project_skill": ["React Native", "expo","expo-media-library","react-native-vision-camera"],
+    "category": ["All", "Mobile"],
+    "project_img": "/",
+    "Github_Link": "https://github.com/mayurdesai32/mdCamera",
+    "Live_Link": "https://github.com/mayurdesai32/mdCamera",
+    "project_desc":
+      "MD CAMERA its camera application which similar to apple camera "
+  },
+  {
+    "project_title": "MD Wallpaper",
+    "project_skill": ["React Native"],
+    "category": ["All", "Mobile"],
+    "project_img": "/",
+    "Github_Link": "https://github.com/mayurdesai32/mdCamera",
+    "Live_Link": "https://github.com/mayurdesai32/mdCamera",
+    "project_desc":
+      "MD CAMERA its camera application which similar to apple camera "
   }
+
+
+
 ]
