@@ -33,7 +33,7 @@ const HeroSection = () => {
           </div>
           <div className="heroImg">
             {/* <Image src={hero} alt="hero" priority={false} placeholder="empty" /> */}
-            {/* <HeroImage3d/> */}
+            <HeroImage3d/>
           </div>
         </div>
         {/*  */}

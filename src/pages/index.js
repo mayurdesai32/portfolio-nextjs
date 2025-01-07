@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
       <div className={lexend.className}>
         <NavbarSection />
-         <HeroImage3d/>
+         {/* <HeroImage3d/> */}
         <HeroSection />
         <AboutSection />
         <SkillSection />

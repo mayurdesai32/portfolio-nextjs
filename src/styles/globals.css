@@ -1,5 +1,5 @@
 :root {
-  --max-width: 1300px;
+  --max-width: 1500px;
   --primary_color: #1AA088;
   --secondary_color: #BEBEBE;
   --black_color: #161616;
@@ -173,10 +173,12 @@ button {
 
 
 .heroImg {
-  max-width: 481px;
- max-height: 484px;
+  /* max-width: 481px; */
+ /* max-height: 484px; */
   position: relative;
-  min-width: 350px;
+  min-width: 450px;
+  /* width: 500; */
+  aspect-ratio: 1/1;
 }
 
 .heroImg img {

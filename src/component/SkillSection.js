@@ -41,8 +41,8 @@ const SkillSection = () => {
               "FLUTTER",
               "SWIFTUI",
               "REACT NATIVE SKIA",
-              "FLUTTER BLOC",
-              "FLUTTER RIVERPOD",
+              " BLOC",
+              " RIVERPOD",
               "JETPACKCOMPOSE",
               // 'FIGMA',
             ]}
