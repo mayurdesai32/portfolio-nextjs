@@ -31,9 +31,10 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
-          <div className="heroImg">
+          <div className="heroImg" style={{ position: "relative" }}>
+            <div className="heroImg_bg" />
             {/* <Image src={hero} alt="hero" priority={false} placeholder="empty" /> */}
-            <HeroImage3d/>
+            <HeroImage3d />
           </div>
         </div>
         {/*  */}

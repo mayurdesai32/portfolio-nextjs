@@ -1,13 +1,15 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 export default function Model({
-  scale = [2.5, 2.2, 2.2],
+  scale = [1.7, 1.7, 1.7],
   position = [0.0, 0.007, 1],
   rotation = [0.3, -0.3, 0],
   ...props
 }) {
   const { nodes, materials } = useGLTF("/model.glb");
+
+
   return (
     <group
       {...props}
