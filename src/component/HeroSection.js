@@ -4,6 +4,7 @@ import Image from "next/image";
 
 // import hero from '@/../public/hero.png';
 import hero from "../../public/hero.png";
+import HeroImage3d from "./HeroImage3d";
 // import Group from '../../public/Group 1.svg';
 const HeroSection = () => {
   return (
@@ -31,35 +32,35 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="heroImg">
-            <Image src={hero} alt="hero" priority={false} placeholder="empty" />
+            {/* <Image src={hero} alt="hero" priority={false} placeholder="empty" /> */}
+            {/* <HeroImage3d/> */}
           </div>
         </div>
         {/*  */}
 
-          <div className="hero_footer">
-            <a href="https://linkedin.com/in/mayurdesai88" target="blank">
-              <i className="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/mayurdesai32" target="blank">
-              <i className="fa-brands fa-github"></i>
-            </a>
+        <div className="hero_footer">
+          <a href="https://linkedin.com/in/mayurdesai88" target="blank">
+            <i className="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/mayurdesai32" target="blank">
+            <i className="fa-brands fa-github"></i>
+          </a>
 
-            <a href="https://medium.com/@msdesai32" target="blank">
-              <i
-                className="fa-brands fa-medium"
-                style={{ padding: "0.6rem 0.5rem" }}
-              ></i>
-            </a>
+          <a href="https://medium.com/@msdesai32" target="blank">
+            <i
+              className="fa-brands fa-medium"
+              style={{ padding: "0.6rem 0.5rem" }}
+            ></i>
+          </a>
 
-            <a href="https://wa.me/9372191971" target="blank">
-              <i className="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="mailto:msdesai32@gmail.com" target="blank">
-              <i className="fa-sharp fa-regular fa-envelope circular-icon"></i>
-            </a>
-            {/* <i className="fa-brands fa-kaggle"></i> */}
-          </div>
-       
+          <a href="https://wa.me/9372191971" target="blank">
+            <i className="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="mailto:msdesai32@gmail.com" target="blank">
+            <i className="fa-sharp fa-regular fa-envelope circular-icon"></i>
+          </a>
+          {/* <i className="fa-brands fa-kaggle"></i> */}
+        </div>
       </div>
     </div>
   );

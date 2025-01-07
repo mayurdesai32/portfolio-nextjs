@@ -13,6 +13,7 @@ import ContactSection from "@/component/ContactSection";
 import { ToastContainer } from "@/component/ToastContainer";
 import "react-toastify/dist/ReactToastify.css";
 import MyBlogSection from "@/component/MyBlogSection";
+import HeroImage3d from "@/component/HeroImage3d";
 const lexend = Lexend({ subsets: ["latin"], display: "swap" });
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
       </Head>
       <div className={lexend.className}>
         <NavbarSection />
+         <HeroImage3d/>
         <HeroSection />
         <AboutSection />
         <SkillSection />
