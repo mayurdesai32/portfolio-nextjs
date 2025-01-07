@@ -14,6 +14,9 @@ const HeroImage3d = () => {
       style={{
         width: "100%",
         height: "100%",
+
+        // border: "2px solid red",
+        // overflow:'visible'
         // height: "100vh"
       }}
     >
@@ -22,6 +25,8 @@ const HeroImage3d = () => {
         antialias={"true"}
         camera={{ fov: 35 }}
         style={{
+          //  overflow:'visible',
+          // position: "absolute",
           width: "100%",
           height: "100%",
           zIndex: 2,
