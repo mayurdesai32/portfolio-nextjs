@@ -73,7 +73,7 @@ setScale(1.8)
   }, []);
 
 
-
+console.log("size",scale);
 
   return (
     <div
@@ -91,15 +91,15 @@ setScale(1.8)
           width: "100%",
           height: "100%",
           position: "absolute",
-
-          top: scale < 1.9 ? (scale < 1.4 ? "-7%" : "17%") : "4%",
+          // border: "1px solid red",
+          top: scale < 1.9 ? (scale === 1.5 ? "20%" : "10%") : "4%",
           zIndex: 2,
         }}
       >
         <Suspense fallback={<Loader scale={scale} />}>
           <Environment preset="apartment" />
           <ambientLight intensity={2} />
-          <OrbitControls enableZoom={false}  />
+          <OrbitControls enableZoom={false} />
           <Model scale={[scale, scale, scale]} />
         </Suspense>
       </Canvas>
