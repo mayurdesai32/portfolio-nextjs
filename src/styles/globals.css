@@ -999,6 +999,13 @@ textarea {
       text-align: center;
     }
 
+#HeroSection {
+ 
+  padding-top: 4rem;
+}
+
+        
+
 
     .heroImg {
       width: 100%;
@@ -1089,6 +1096,7 @@ padding: 0.7rem 1.3rem;
 
   .heroImg {
     width: 100%;
+    height: 420px;
   }
 
 
@@ -1420,6 +1428,7 @@ padding: 0.7rem 1.3rem;
 
 .heroImg {
   min-width: 400px;
+
 }
  
 
@@ -1440,11 +1449,15 @@ padding: 0.7rem 1.3rem;
 .heroImg {
     /* position: relative; */
     min-width: 280px;
+    max-height: 330px;
+      /* min-height: 300px; */
+    
   }
 
 
 
   #HeroSection {
+      /* padding-top: 0rem; */
     margin-bottom: 3rem;
   }
 
@@ -1490,4 +1503,14 @@ padding: 0.7rem 1.3rem;
     font-size: 0.8rem;
     width: 105px;
   }
+
+.heroImg {
+  /* position: relative; */
+  /* min-width: 280px; */
+  max-height: 310px;
+  /* min-height: 300px; */
+  /* border: 1px solid red; */
+}
+
+
 }
